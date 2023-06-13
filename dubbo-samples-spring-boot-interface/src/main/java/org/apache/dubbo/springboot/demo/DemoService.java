@@ -16,8 +16,11 @@
  */
 package org.apache.dubbo.springboot.demo;
 
+import org.mvnsearch.microservices.annotator.RemoteAccess;
+
 import java.util.concurrent.CompletableFuture;
 
+@RemoteAccess
 public interface DemoService {
 
     String sayHello(String name);
